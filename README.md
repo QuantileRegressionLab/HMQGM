@@ -3,8 +3,7 @@ README – HMQGM Project
 
 # Overview
 
-This repository contains R scripts and functions for simulation studies,
-methodological development, and empirical applications of the **Hidden
+This repository contains R scripts and functions for simulation studies and empirical applications of the **Hidden
 Markov Quantile Graphical Model (HMQGM)** and related baselines (e.g.,
 **HMGlasso**).  
 The code has been developed for the paper *“Hidden Markov Quantile

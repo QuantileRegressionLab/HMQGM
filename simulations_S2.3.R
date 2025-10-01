@@ -143,8 +143,12 @@ p    <- d[1]
 dist <- distribution[1]
 setting <- settings[1]
 
+
+
 ##States loop
 for(k in 1:K){ 
+  
+  t0 <- Sys.time()
   
   ## Quantile grid (you can toggle alternatives below; default = 7 octiles)
   tau_mode <- "octiles"  # choose between "median" and "octiles"
@@ -354,7 +358,8 @@ for(k in 1:K){
   Graph.grid.info.3d <- simplify2array(Graph.grid.info)
   Graph.grid.info.out <- apply(Graph.grid.info.3d, c(1,2), median, na.rm = T)
   
-  
+  t1 <- Sys.time()
+  time <- t1 - t0
   
   out_hmqgm_dyn <- list(Graph.grid.info = Graph.grid.info,
                         Graph.grid.median = Graph.grid.info.out,
@@ -362,7 +367,7 @@ for(k in 1:K){
                         lambdaseq = lambdaseq, AUC_t = AUC_t, AUC = AUC,
                         A_list = A_list, Sigma_list = Sigma_list,
                         Omega_list = Omega_list, Theta_t = Theta_t,
-                        model = model_def, R = R,
+                        model = model_def, R = R, time = time,
                         Graph.grid.info_l = Graph.grid.info_l,
                         Y = Y)
   
@@ -381,5 +386,4 @@ for(k in 1:K){
 
 
 if (use_parallel && !is.null(cl)) stopCluster(cl)
-t1 <- Sys.time()
-time <- t1 - t0
+

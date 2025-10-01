@@ -323,9 +323,11 @@ for (i in 1:MM) {
   
 } # end MC loop
 
+if (use_parallel && !is.null(cl)) stopCluster(cl)
+t1 <- Sys.time()
+time <- t1 - t0
 
-
-results <- list(AIC = aic_fin, BIC = bic_fin, ICL = icl_fin)
+results <- list(AIC = aic_fin, BIC = bic_fin, ICL = icl_fin, time = time)
 
 ## --------------------------- SAVE OUTPUT ---------------------------------- ##
 tau_tag <- if (l.tau == 1) "tau1" else paste0("tau", l.tau)

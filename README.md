@@ -86,6 +86,32 @@ P`M<sub>`{=html}2.5</sub> concentrations in Northern Italy (main text
 
 ------------------------------------------------------------------------
 
+# Data
+- **`pm2.5_northIta1922.RData`** 
+    Real dataset of daily PM<sub>2.5</sub> concentrations in 14 Northern Italian
+    cities January 1, 2019, to December 31, 2022 (N=1439 observations). 
+    The dataset, stored in `.RData` format, includes daily PM<sub>2.5</sub> values for the following cities:
+
+- Milano  
+- Cremona  
+- Mantova  
+- Bergamo  
+- Brescia  
+- Parma  
+- Modena  
+- Bologna  
+- Padova  
+- Venezia  
+- Alessandria  
+- Torino  
+- Novara  
+- Trento  
+
+The data was downloaded from the European Environment Agency website (https://eeadmz1-downloads-webapp.azurewebsites.net/).
+
+
+-----------------------------------------------------------------------
+
 # Notes
 
 -   All scripts are designed to be modular: simulation files source the

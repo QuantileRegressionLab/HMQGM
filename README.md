@@ -46,7 +46,7 @@ PM<sub>2.5</sub> concentrations in Northern Italy (main text
 ## Empirical Application
 
 -   **`RealdataScript_HMQGM.R`**\
-    Application to P`M<sub>`{=html}2.5</sub> concentrations in 14 Northern Italian
+    Application to PM<sub>2.5</sub> concentrations in 14 Northern Italian
     cities (2019–2022). Fits HMQGM with K=1,…,4 and saves results for
     AIC/BIC/ICL model selection, adjacency structures, selected lambdas,
     and runtime information for downstream tables/figures.

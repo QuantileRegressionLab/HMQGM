@@ -119,3 +119,15 @@ The data was downloaded from the European Environment Agency website (https://ee
     (`HMLQGMrealdata_<K>K.RData`).
 
 ------------------------------------------------------------------------
+
+
+# How to cite these materials
+If you use this code in your research, please cite the original paper:
+
+> Foroni, B., Merlo, L., Petrella, L., & Salvati, N. (2025). Hidden Markov Quantile Graphical Model. *Journal of Computation and Graphical Statistics*
+
+-----------------------------------------------------------------------
+
+# Contact
+For questions or feedback, please contact the corresponding author(s)
+as listed in the paper.

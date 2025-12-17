@@ -5,8 +5,8 @@
 This repository contains R scripts and functions for simulation studies
 and empirical applications of the **Hidden Markov Quantile Graphical
 Model (HMQGM)** and related baselines (e.g., HMGlasso).\
-The code has been developed for the paper **“Hidden Markov Quantile
-Graphical Model”** by B. Foroni, L. Merlo, L. Petrella, N. Salvati
+The code has been developed for the paper **[“Hidden Markov Quantile
+Graphical Model”](https://doi.org/10.1080/10618600.2025.2579526)** by B. Foroni, L. Merlo, L. Petrella, N. Salvati, *Journal of Computation and Graphical Statistics* 
 (2025). The code supports the analyses reported in the manuscript (main
 text §§4.1–4.3, SM §§S2.1–S2.3) and the real data application on
 PM<sub>2.5</sub> concentrations in Northern Italy (main text
